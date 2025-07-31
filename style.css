@@ -61,3 +61,66 @@ span {
     background-repeat: no-repeat;
     background-position: center;
 }
+h1 {
+    color:aliceblue;
+    font-size: 50px;
+    margin-top: 5px;
+}
+h4 {
+    color:rgb(255, 182, 204);
+    font-size: 17px;
+    padding-left: 3px;
+}
+h3{
+   color:aliceblue;
+   font-size:23px;
+   margin-top: 10px;
+}
+.Home{
+    position: absolute;
+    margin-top: 37px;
+    left:36.8%;
+}
+.placeholder {
+   
+    margin-top: 42px;
+    
+}
+form {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background-color: white; 
+    padding: 1px;
+    border: 3px solid #ff0000;
+}
+input[type="email"] {
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 17px;
+    width: 170px;
+    font-family: 'Roboto', sans-serif;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    margin-left: 67px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkred;
+}
