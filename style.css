@@ -26,7 +26,7 @@ header{
 .navbar ul li{
     display:inline-block;
     list-style-type: none;
-    padding: 10px  25px;
+    padding: 10px 25px;
 }
 .contact{
     color:white;
@@ -44,7 +44,7 @@ header{
     transition: 0.4s;
 }
 .box {
-background-color: hsl(0, 92%, 48%);
+background-color:red;
 border-radius: 12px;
 padding: 7.5px;
 font-weight: 500;
@@ -78,7 +78,7 @@ h4 {
 h3{
    color:aliceblue;
    font-size:23px;
-   margin-top: 10px;
+   margin-top: 5px;
 }
 .Home{
     position: absolute;
@@ -87,7 +87,6 @@ h3{
 
 }
 .placeholder {
-   
     margin-top: 42px;
     
 }
@@ -98,6 +97,8 @@ form {
     background-color: white; 
     padding: 1px;
     border: 3px solid #ff0000;
+    margin-right:200px;
+    margin-top: 10px;
 }
 input[type="email"] {
     border: none;
@@ -256,7 +257,7 @@ i {
     color: rgb(238, 196, 209);
     font-size: 15px;
     line-height: 1.6;
-     margin-bottom: 22px;
+    margin-bottom: 22px;
 }
 .container-one button,
 .container-two button,
@@ -270,7 +271,7 @@ i {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  
+ 
 }
 
 .but-ton1,
@@ -286,7 +287,6 @@ i {
     transform: scale(1.2);
 }
 .projects{
-    width: 100%;
     padding-top: 120px; 
     width:100%;
     background-color: rgba(169, 169, 169, 0.443);
@@ -397,7 +397,7 @@ i {
     cursor: pointer;
     transition: opacity 0.4s ease;
     border-radius: 10px;
-   
+    
 }
 
 .project2:hover .project2-details {
@@ -448,7 +448,7 @@ i {
     cursor: pointer;
     transition: opacity 0.4s ease;
     border-radius: 10px;
-   
+    
 }
 
 .project3:hover .project3-details {
@@ -464,4 +464,355 @@ i {
     font-size: 15px;
     line-height: 1.4;
     color: rgb(234, 214, 220);
+}
+.Message{
+    padding-top: 10px; 
+    width:100%;
+    background-color:rgba(169, 169, 169, 0.443);
+}
+.message-container{
+width:100%;
+height:200px;
+background-color: rgba(0, 0, 0, 0.33);
+}
+.Message .message-container h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    color:aliceblue;
+    padding-top: 55px;
+    font-size:30px;
+}
+.Message .message-container button {
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    margin-left: 67px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Message .message-container button:hover {
+    background-color: darkred;
+    transform: scale(1.2);
+}
+.message-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 79px;
+    padding-bottom: 20px;
+}
+
+.contactt{
+    display:flex;
+    padding-top: 70px;
+    width:100%;
+    background-color:black;
+    padding-bottom: 120px;
+   
+}
+.contact-me {
+    margin-left:310px;
+    margin-top: 28px;
+}
+.contactt .contact-me h1{
+    margin-bottom: 18px;
+}
+.contactt .contact-me h4 {
+    margin-bottom: 18px;
+}
+.contactt .contact-me h5 {
+    color:aliceblue;
+    margin-bottom: 25px;
+    padding-left:2px;
+}
+.type-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+   margin-left: 210px;
+   margin-top: 40px;
+}
+
+.type-container input[type="text"],
+.type-container input[type="email"] {
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    width:100%;
+}
+
+.type-container button {
+    
+    border-radius: 25px;
+    width:200px;
+    margin-left: 100px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top:16px;
+}
+
+.type-container button:hover {
+    background-color: darkred;
+    transform: scale(1.1);
+}
+ .copyy {
+ width:100%;
+background-color: rgba(169, 169, 169, 0.443);
+ }
+
+.copyy .copyright p {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color:aliceblue;
+    text-align: center;
+    font-weight: 100;
+    font-size: small;
+    margin-bottom: 37px;
+}
+.copyy .copyright p i {
+    color:aliceblue;
+}
+
+/* --- */
+
+/* Responsive CSS with Media Queries */
+
+/* --- */
+
+/* For screens smaller than 1024px (tablets and phones) */
+@media (max-width: 1023px) {
+    .navbar ul {
+        margin-right: 0; 
+    }
+    .about-me {
+        padding: 50px; 
+        flex-direction: column; 
+        align-items: center;
+    }
+    .image1 {
+        width: 60%;
+        height: auto; 
+        margin-left: 0;
+    }
+    .my-info {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .main-container {
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+    .container-one, .container-two, .container-three {
+        width: 45%; 
+    }
+    .projects .my-projects h1 {
+        font-size: 50px;
+    }
+    .projects-container {
+        padding: 0 50px; 
+    }
+    .project1, .project2, .project3 {
+        width: 100%; 
+        height: 300px;
+    }
+}
+
+/* For screens smaller than 767px (mobile phones) */
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .navbar ul {
+        margin-top: 10px;
+        margin-right: 0;
+    }
+    
+    .navbar ul li {
+        padding: 5px 15px;
+    }
+
+    .hero {
+         min-height: 400px;
+        background-size: cover;
+    }
+
+    .Home {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+        left: auto;
+    }
+    
+    h1 {
+        font-size: 36px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+
+    /* Reset the form to its original desktop layout for this breakpoint */
+    .Home .placeholder form {
+      flex-direction: row;
+      justify-content: center;
+      width: auto;
+      max-width: none;
+      margin: 42px auto 0;
+    }
+
+    /* Adjust the input and button to match the original design */
+    .Home .placeholder input[type="email"] {
+        width: 170px;
+        margin-bottom: 0;
+        padding: 8px 16px;
+    }
+
+    .Home .placeholder button {
+        width: auto;
+        margin-left: 67px;
+        padding: 8px 16px;
+    }
+    
+    .section-about {
+        margin-top: 50px;
+        padding: 50px 20px;
+    }
+    
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .image1 {
+        background-image: url("image1.jpg");
+        width: 90%;
+        height: auto;
+         min-height: 400px;
+        background-size: cover;
+        margin: 0 auto;
+    }
+    
+    .my-info {
+        max-width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .h1-2 {
+        font-size: 36px;
+    }
+    
+    .section-services .my-services h1,
+    .projects .my-projects h1 {
+        font-size: 40px;
+    }
+
+    .main-container {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .container-one, .container-two, .container-three {
+        width: 90%;
+        margin: 20px auto;
+        height: auto;
+    }
+    
+    .but-ton1, .but-ton2, .but-ton3 {
+        margin-right: 0;
+    }
+
+    .projects-container {
+        padding: 0 10px;
+    }
+    
+    .project1, .project2, .project3 {
+        width: 90%;
+        height: 250px;
+    }
+
+    .project1-details h4, .project2-details h4, .project3-details h4 {
+        font-size: 20px;
+    }
+
+    .project1-details p, .project2-details p, .project3-details p {
+        font-size: 14px;
+    }
+
+    .Message .message-container h3 {
+        font-size: 20px;
+        padding-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .message-button {
+        margin-right: 0;
+    }
+}
+/* For screens smaller than 767px (mobile phones) */
+@media (max-width: 767px) {
+    /* ... (your existing mobile styles) ... */
+
+    .contactt {
+        flex-direction: column; /* Stack the contact info and form vertically */
+        align-items: center; /* Center everything horizontally */
+        text-align: center; /* Center text within the child containers */
+        padding-top: 40px; /* Adjust padding for mobile */
+    }
+
+    .contact-me {
+        margin: 0; /* Reset margins for mobile */
+    }
+
+    .contactt .contact-me h1 {
+        font-size: 36px;
+    }
+
+    .contactt .contact-me h4 {
+        margin-bottom: 10px;
+    }
+
+    .contactt .contact-me h5 {
+        margin-bottom: 15px;
+    }
+
+    .contactt .contact-icons {
+        margin-left: 0; /* Reset margin-left */
+        margin-top: 20px;
+        justify-content: center; /* Center the icons */
+    }
+
+    .type-container {
+        flex-direction: column; /* Stack inputs vertically */
+        max-width: 90%; /* Make the container take up most of the screen width */
+        margin: 20px auto; /* Center the form container on the page */
+        padding: 0 10px;
+    }
+
+    .type-container input {
+        width: 100%; /* Ensure inputs take up full width */
+    }
+    
+    .type-container button {
+        width: 100%; /* Ensure button takes up full width */
+        margin-left: 0;
+    }
 }
