@@ -1,104 +1,111 @@
 * {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-body{
+body {
     background-color: black;
-    
 }
-header{
-    padding-bottom:17.5px;
+header {
+    padding-bottom: 17.5px;
 }
 .navbar {
-    padding-top:30px;
+    padding-top: 30px;
     background-color: black;
-    color:white;
-    display:flex;
+    color: white;
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 .navbar ul {
-    margin-right: 108px; 
+    margin-right: 108px;
 }
-.navbar ul li{
-    display:inline-block;
+.navbar ul li {
+    display: inline-block;
     list-style-type: none;
     padding: 10px 25px;
 }
-.contact{
-    color:white;
+.contact {
+    color: white;
     text-decoration: none;
 }
-.navbar ul li a{
+.navbar ul li a {
     color: aliceblue;
     text-decoration: none;
     font-weight: 455;
     font-size: 18px;
     text-transform: capitalize;
 }
-.navbar ul li a:hover{
-    color:hsl(0, 92%, 48%);
+.navbar ul li a:hover {
+    color: hsl(0, 92%, 48%);
     transition: 0.4s;
 }
 .box {
-background-color:red;
-border-radius: 12px;
-padding: 7.5px;
-font-weight: 500;
-color:aliceblue;
-transition: transform .4s;
+    background-color: red;
+    border-radius: 12px;
+    padding: 7.5px;
+    font-weight: 500;
+    color: aliceblue;
+    transition: transform 0.4s;
 }
 .box:hover {
     transform: scale(1.2);
 }
 span {
-    color:red
+    color: red;
 }
-.hero{
-    height:400px;
-    width:100%;
+.hero {
+    height: 400px;
+    width: 100%;
     background-image: url("image2.jpeg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 h1 {
-    color:aliceblue;
+    color: aliceblue;
     font-size: 50px;
     margin-top: 5px;
 }
 h4 {
-    color:rgb(255, 182, 204);
+    color: rgb(255, 182, 204);
     font-size: 17px;
     padding-left: 5px;
 }
-h3{
-   color:aliceblue;
-   font-size:23px;
-   margin-top: 5px;
+h3 {
+    color: aliceblue;
+    font-size: 23px;
+    margin-top: 5px;
 }
-.Home{
-    position: absolute;
-    margin-top: 39px;
-    left:36.8%;
-
+.Home {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 39px;
+    width: 100%;
 }
 .placeholder {
-    margin-top: 42px;
-    
+    margin-top: 32px;
 }
 form {
     display: flex;
     align-items: center;
     border-radius: 50px;
-    background-color: white; 
+    background-color: white;
     padding: 1px;
     border: 3px solid #ff0000;
-    margin-right:200px;
+    margin-right: 0;
     margin-top: 10px;
+    margin-bottom: 17px;
 }
 input[type="email"] {
     border: none;
@@ -131,34 +138,35 @@ button:hover {
     background-color: darkred;
     transform: scale(1.2);
 }
-.section-about{
-    width:100%;
+.section-about {
+    width: 100%;
     padding: 100px 0px;
-    margin-top:295px;
+    margin-top: 0;
     background-color: rgba(169, 169, 169, 0.244);
-}
-.image1{
-    background-image:url("image1.jpg");
-    background-size: contain;
-    height:500px;
-    width:400px;
-    background-repeat: no-repeat;
-    background-position: left center ;
-    margin-left: 5px;
-    border-radius: 10px;
-    
 }
 .about-me {
     display: flex;
-    gap:60px;
-    align-content: center;
-    justify-items: center;
-    padding: 50px 250px;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 0 50px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-
+.image1 {
+    background-image: url("image1.jpg");
+    background-size: contain;
+    width: 35%;
+    height: 0;
+    padding-top: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
 .my-info {
     max-width: 500px;
-    margin-top: 100px; 
+    margin-top: 0;
+    text-align: left;
 }
 
 .h1-2 {
@@ -194,27 +202,26 @@ button:hover {
     margin-left: 0;
 }
 
-
 .my-info button:hover {
     background-color: darkred;
     transform: scale(1.1);
 }
-.section-services{
+.section-services {
     width: 100%;
     padding-top: 120px;
-    width:100%;
+    width: 100%;
     background-color: rgba(169, 169, 169, 0.355);
     padding-bottom: 120px;
 }
 
 .main-container {
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 i {
-    color:red;
+    color: red;
 }
 .section-services .my-services h1 {
     text-align: center;
@@ -271,7 +278,6 @@ i {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
- 
 }
 
 .but-ton1,
@@ -280,20 +286,20 @@ i {
     margin-right: 61px;
 }
 
-.container-one button:hover ,
+.container-one button:hover,
 .container-two button:hover,
 .container-three button:hover {
     background-color: darkred;
     transform: scale(1.2);
 }
-.projects{
-    padding-top: 120px; 
-    width:100%;
+.projects {
+    padding-top: 120px;
+    width: 100%;
     background-color: rgba(169, 169, 169, 0.443);
     padding-bottom: 120px;
 }
 .projects-container {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -305,10 +311,10 @@ i {
     margin-top: 55px;
     border-radius: 10px;
     width: 270px;
-    background-color:black;
+    background-color: black;
 }
 
-.projects .my-projects h1{
+.projects .my-projects h1 {
     text-align: center;
     color: rgb(240, 248, 255);
     font-size: 65px;
@@ -335,7 +341,7 @@ i {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     opacity: 0;
     display: flex;
@@ -385,7 +391,7 @@ i {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     opacity: 0;
     display: flex;
@@ -397,7 +403,6 @@ i {
     cursor: pointer;
     transition: opacity 0.4s ease;
     border-radius: 10px;
-    
 }
 
 .project2:hover .project2-details {
@@ -425,7 +430,7 @@ i {
     background-repeat: no-repeat;
     background-position: center;
     width: 35.5%;
-    height:400px;
+    height: 400px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -436,7 +441,7 @@ i {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     opacity: 0;
     display: flex;
@@ -448,7 +453,6 @@ i {
     cursor: pointer;
     transition: opacity 0.4s ease;
     border-radius: 10px;
-    
 }
 
 .project3:hover .project3-details {
@@ -465,22 +469,22 @@ i {
     line-height: 1.4;
     color: rgb(234, 214, 220);
 }
-.Message{
-    padding-top: 10px; 
-    width:100%;
-    background-color:rgba(169, 169, 169, 0.443);
+.Message {
+    padding-top: 10px;
+    width: 100%;
+    background-color: rgba(169, 169, 169, 0.443);
 }
-.message-container{
-width:100%;
-height:200px;
-background-color: rgba(0, 0, 0, 0.33);
+.message-container {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.33);
 }
 .Message .message-container h3 {
     text-align: center;
     margin-bottom: 30px;
-    color:aliceblue;
+    color: aliceblue;
     padding-top: 55px;
-    font-size:30px;
+    font-size: 30px;
 }
 .Message .message-container button {
     border: none;
@@ -507,28 +511,29 @@ background-color: rgba(0, 0, 0, 0.33);
     padding-bottom: 20px;
 }
 
-.contactt{
-    display:flex;
+.contactt {
+    display: flex;
     padding-top: 70px;
-    width:100%;
-    background-color:black;
+    width: 100%;
+    background-color: black;
     padding-bottom: 120px;
-   
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 .contact-me {
-    margin-left:310px;
-    margin-top: 28px;
+    margin: 0;
 }
-.contactt .contact-me h1{
+.contactt .contact-me h1 {
     margin-bottom: 18px;
 }
 .contactt .contact-me h4 {
     margin-bottom: 18px;
 }
 .contactt .contact-me h5 {
-    color:aliceblue;
+    color: aliceblue;
     margin-bottom: 25px;
-    padding-left:2px;
+    padding-left: 2px;
 }
 .type-container {
     display: flex;
@@ -537,8 +542,8 @@ background-color: rgba(0, 0, 0, 0.33);
     gap: 15px;
     width: 100%;
     max-width: 400px;
-   margin-left: 210px;
-   margin-top: 40px;
+    margin-left: 0;
+    margin-top: 40px;
 }
 
 .type-container input[type="text"],
@@ -548,90 +553,155 @@ background-color: rgba(0, 0, 0, 0.33);
     border: none;
     font-size: 16px;
     outline: none;
-    width:100%;
+    width: 100%;
 }
 
 .type-container button {
-    
     border-radius: 25px;
-    width:200px;
-    margin-left: 100px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
     border: none;
     font-size: 16px;
     color: white;
     background-color: red;
     cursor: pointer;
     transition: 0.3s ease;
-    margin-top:16px;
+    margin-top: 16px;
 }
 
 .type-container button:hover {
     background-color: darkred;
     transform: scale(1.1);
 }
- .copyy {
- width:100%;
-background-color: rgba(169, 169, 169, 0.443);
- }
+.copyy {
+    width: 100%;
+    background-color: rgba(169, 169, 169, 0.443);
+}
 
 .copyy .copyright p {
     padding-bottom: 15px;
     padding-top: 15px;
-    color:aliceblue;
+    color: aliceblue;
     text-align: center;
     font-weight: 100;
     font-size: small;
     margin-bottom: 37px;
 }
 .copyy .copyright p i {
-    color:aliceblue;
+    color: aliceblue;
+}
+.contactt .contact-me a h5:hover {
+text-decoration: none;
+color: #ff0000;
 }
 
-/* --- */
-
-/* Responsive CSS with Media Queries */
-
-/* --- */
-
-/* For screens smaller than 1024px (tablets and phones) */
 @media (max-width: 1023px) {
     .navbar ul {
-        margin-right: 0; 
+        margin-right: 0;
     }
     .about-me {
-        padding: 50px; 
-        flex-direction: column; 
+        padding: 50px;
+        flex-direction: column;
         align-items: center;
     }
     .image1 {
         width: 60%;
-        height: auto; 
+        height: 0;
+        padding-top: 80%;
+        background-size: contain;
         margin-left: 0;
+        background-position: center;
     }
     .my-info {
         margin-top: 20px;
         text-align: center;
     }
     .main-container {
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         justify-content: center;
     }
-    .container-one, .container-two, .container-three {
-        width: 45%; 
+    .container-one,
+    .container-two,
+    .container-three {
+        width: 45%;
     }
     .projects .my-projects h1 {
         font-size: 50px;
     }
     .projects-container {
-        padding: 0 50px; 
+        padding: 0 50px;
     }
-    .project1, .project2, .project3 {
-        width: 100%; 
+    .project1,
+    .project2,
+    .project3 {
+        width: 100%;
         height: 300px;
     }
 }
 
-/* For screens smaller than 767px (mobile phones) */
+
+@media (min-width: 451px) and (max-width: 767px) {
+    .hero {
+        height: 300px;
+        background-size: contain;
+    }
+    .Home .placeholder form {
+        margin-right: 0;
+    }
+    .about-me {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image1 {
+        width: 80%;
+        height: 0;
+        padding-top: 80%;
+        background-size: contain;
+        margin-left: 0;
+        background-position: center;
+    }
+    .my-info {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .main-container {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .container-one, .container-two, .container-three {
+        width: 90%;
+        margin: 20px auto;
+        height: auto;
+    }
+    .projects .my-projects h1 {
+        font-size: 40px;
+    }
+    .project1, .project2, .project3 {
+        width: 90%;
+        height: 250px;
+    }
+    .contactt {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 40px;
+    }
+    .contact-me {
+        margin: 0;
+    }
+    .type-container {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+    .type-container button {
+        margin: 16px auto 0;
+    }
+}
+
+
 @media (max-width: 767px) {
     .navbar {
         flex-direction: column;
@@ -643,14 +713,14 @@ background-color: rgba(169, 169, 169, 0.443);
         margin-top: 10px;
         margin-right: 0;
     }
-    
+
     .navbar ul li {
         padding: 5px 15px;
     }
 
     .hero {
-         min-height: 400px;
-        background-size: cover;
+        min-height: 250px;
+        background-size: contain;
     }
 
     .Home {
@@ -659,25 +729,23 @@ background-color: rgba(169, 169, 169, 0.443);
         margin-top: 20px;
         left: auto;
     }
-    
+
     h1 {
         font-size: 36px;
     }
-    
+
     h3 {
         font-size: 18px;
     }
 
-    /* Reset the form to its original desktop layout for this breakpoint */
     .Home .placeholder form {
-      flex-direction: row;
-      justify-content: center;
-      width: auto;
-      max-width: none;
-      margin: 42px auto 0;
+        flex-direction: row;
+        justify-content: center;
+        width: auto;
+        max-width: none;
+        margin: 42px auto 0;
     }
 
-    /* Adjust the input and button to match the original design */
     .Home .placeholder input[type="email"] {
         width: 170px;
         margin-bottom: 0;
@@ -689,37 +757,39 @@ background-color: rgba(169, 169, 169, 0.443);
         margin-left: 67px;
         padding: 8px 16px;
     }
-    
+
     .section-about {
         margin-top: 50px;
         padding: 50px 20px;
     }
-    
+
     .about-me {
         flex-direction: column;
         align-items: center;
         padding: 0;
     }
-    
+
     .image1 {
         background-image: url("image1.jpg");
         width: 90%;
-        height: auto;
-         min-height: 400px;
-        background-size: cover;
+        height: 0;
+        padding-top: 80%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
         margin: 0 auto;
     }
-    
+
     .my-info {
         max-width: 100%;
         text-align: center;
         margin-top: 20px;
     }
-    
+
     .h1-2 {
         font-size: 36px;
     }
-    
+
     .section-services .my-services h1,
     .projects .my-projects h1 {
         font-size: 40px;
@@ -730,30 +800,39 @@ background-color: rgba(169, 169, 169, 0.443);
         padding: 0 10px;
     }
 
-    .container-one, .container-two, .container-three {
+    .container-one,
+    .container-two,
+    .container-three {
         width: 90%;
         margin: 20px auto;
         height: auto;
     }
-    
-    .but-ton1, .but-ton2, .but-ton3 {
+
+    .but-ton1,
+    .but-ton2,
+    .but-ton3 {
         margin-right: 0;
     }
 
     .projects-container {
         padding: 0 10px;
     }
-    
-    .project1, .project2, .project3 {
+
+    .project1,
+    .project2,
+    .project3 {
         width: 90%;
         height: 250px;
     }
 
-    .project1-details h4, .project2-details h4, .project3-details h4 {
+    .project1-details h4,
+    .project2-details h4,
+    .project3-details h4 {
         font-size: 20px;
     }
 
-    .project1-details p, .project2-details p, .project3-details p {
+    .project1-details p,
+    .project3-details p {
         font-size: 14px;
     }
 
@@ -762,24 +841,26 @@ background-color: rgba(169, 169, 169, 0.443);
         padding-top: 30px;
         margin-bottom: 20px;
     }
-    
+
     .message-button {
         margin-right: 0;
     }
 }
-/* For screens smaller than 767px (mobile phones) */
+@media (min-width:1022px) and (max-width:2000px){
+    .my-info{
+        margin-top: 0;
+    }
+}
 @media (max-width: 767px) {
-    /* ... (your existing mobile styles) ... */
-
     .contactt {
-        flex-direction: column; /* Stack the contact info and form vertically */
-        align-items: center; /* Center everything horizontally */
-        text-align: center; /* Center text within the child containers */
-        padding-top: 40px; /* Adjust padding for mobile */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 40px;
     }
 
     .contact-me {
-        margin: 0; /* Reset margins for mobile */
+        margin: 0;
     }
 
     .contactt .contact-me h1 {
@@ -795,24 +876,24 @@ background-color: rgba(169, 169, 169, 0.443);
     }
 
     .contactt .contact-icons {
-        margin-left: 0; /* Reset margin-left */
+        margin-left: 0;
         margin-top: 20px;
-        justify-content: center; /* Center the icons */
+        justify-content: center;
     }
 
     .type-container {
-        flex-direction: column; /* Stack inputs vertically */
-        max-width: 90%; /* Make the container take up most of the screen width */
-        margin: 20px auto; /* Center the form container on the page */
+        flex-direction: column;
+        max-width: 90%;
+        margin: 20px auto;
         padding: 0 10px;
     }
 
     .type-container input {
-        width: 100%; /* Ensure inputs take up full width */
+        width: 100%;
     }
-    
+
     .type-container button {
-        width: 100%; /* Ensure button takes up full width */
-        margin-left: 0;
+        width: 100%;
+        margin: 16px auto 0;
     }
 }
